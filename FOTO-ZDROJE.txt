@@ -1,0 +1,27 @@
+Fotografie použité v demu CUTLINE. jsou reálné fotografie ze služby Pexels.
+Zdroj licence: https://www.pexels.com/license/
+Nejde o fotografie zaměstnanců ani realizací skutečného studia CUTLINE.
+
+assets/images/barber-4625627.webp  |  https://www.pexels.com/photo/4625627/
+assets/images/barber-5584458.webp  |  https://www.pexels.com/photo/5584458/
+assets/images/barber-9992818.webp  |  https://www.pexels.com/photo/9992818/
+assets/images/barber-7518731.webp  |  https://www.pexels.com/photo/7518731/
+assets/images/barber-9992820.webp  |  https://www.pexels.com/photo/9992820/
+assets/images/barber-7518751.webp  |  https://www.pexels.com/photo/7518751/
+assets/images/barber-4625626.webp  |  https://www.pexels.com/photo/4625626/
+assets/images/barber-7518735.webp  |  https://www.pexels.com/photo/7518735/
+assets/images/barber-7697283.webp  |  https://www.pexels.com/photo/7697283/
+assets/images/barber-2076930.webp  |  https://www.pexels.com/photo/2076930/
+assets/images/barber-27467943.webp  |  https://www.pexels.com/photo/27467943/
+assets/images/barber-19028067.webp  |  https://www.pexels.com/photo/19028067/
+assets/images/barber-5152514.webp  |  https://www.pexels.com/photo/5152514/
+assets/images/barber-8218487.webp  |  https://www.pexels.com/photo/8218487/
+assets/images/barber-19225142.webp  |  https://www.pexels.com/photo/19225142/
+assets/images/barber-12685937.webp  |  https://www.pexels.com/photo/12685937/
+assets/images/barber-3992850.webp  |  https://www.pexels.com/photo/3992850/
+assets/images/barber-19225277.webp  |  https://www.pexels.com/photo/19225277/
+assets/images/barber-12505400.webp  |  https://www.pexels.com/photo/12505400/
+assets/images/barber-12164646.webp  |  https://www.pexels.com/photo/12164646/
+assets/images/barber-15642778.webp  |  https://www.pexels.com/photo/15642778/
+assets/images/barber-12685938.webp  |  https://www.pexels.com/photo/12685938/
+assets/images/barber-18090356.webp  |  https://www.pexels.com/photo/18090356/

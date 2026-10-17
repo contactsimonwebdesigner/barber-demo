@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<meta name="description" content="CUTLINE. — koncept moderního barbershopu. Stylové střihy, úprava vousů, transparentní ceník a ukázkový rezervační formulář.">
+<title>CUTLINE. | Barber Culture — demo web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Přeskočit na obsah</a>
+<div id="progress" aria-hidden="true"></div>
+<div class="notice"><span>DEMO WEBSITE / KONCEPT PRO PORTFOLIO</span><span>BARBER CULTURE · STŘIHY · DETAIL · STYL</span></div>
+<header class="site-header" id="top">
+  <div class="nav-shell wrap">
+    <a href="#top" class="brand" aria-label="CUTLINE, úvod"><span class="brand-icon">C<span class="brand-slice"></span></span><span>CUTLINE<span class="brand-dot">.</span><small>BARBER CULTURE</small></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hlavní navigace">
+      <a href="#sluzby">SLUŽBY</a><a href="#galerie">LOOKBOOK</a><a href="#cenik">CENÍK</a><a href="#studio">STUDIO</a><a href="#faq">FAQ</a>
+      <a href="#rezervace" class="mobile-nav-cta">REZERVACE →</a>
+    </nav>
+    <a href="#rezervace" class="nav-book">REZERVOVAT <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="heroTitle">
+ <div class="hero-layout wrap">
+  <div class="hero-copy">
+    <div class="eyebrow light"><span class="orange-line"></span> ÚPLNĚ JINÝ BARBER EXPERIENCE / 01—26</div>
+    <h1 id="heroTitle">TVŮJ<br>STŘIH.<br><em>TVŮJ</em><br>POSTOJ<span class="orange">.</span></h1>
+    <p>Žádný kompromisy. Jen precizní střih, čisté linie a styl, který sedí právě tobě. Vítej v CUTLINE.</p>
+    <div class="hero-actions"><a href="#rezervace" class="btn btn-orange">CHCI TERMÍN <span>↗</span></a><a href="#galerie" class="btn btn-ghost">PROHLÉDNOUT STYLY <span>↓</span></a></div>
+    <div class="hero-bottom"><span>EST. <b>2026</b> <small>DEMO BRAND</small></span><span class="scroll-line">SCROLL TO EXPLORE <i></i></span></div>
+  </div>
+  <div class="hero-media">
+   <div class="hero-photo-frame"><img src="assets/images/barber-7697283.webp" alt="Barber při precizním stříhání klienta" fetchpriority="high"><span class="photo-index">01 / STREET-LEVEL STYLE</span></div>
+   <div class="hero-stamp" aria-hidden="true"><span>GOOD HAIR<br>GOOD ENERGY</span><strong>✳</strong></div>
+   <div class="hero-photo-mini"><img src="assets/images/barber-3992850.webp" alt="Moderní barber křesla" loading="lazy"><span>INSIDE / CULTURE</span></div>
+   <div class="photo-corner-text">NOT YOUR AVERAGE BARBER SHOP / / /</div>
+  </div>
+ </div>
+ <div class="hero-rail"><div class="rail-track" aria-hidden="true">PRECISION <b>✳</b> CHARACTER <b>✳</b> FRESH CUTS <b>✳</b> CULTURE <b>✳</b> PRECISION <b>✳</b> CHARACTER <b>✳</b> FRESH CUTS <b>✳</b> CULTURE <b>✳</b> &nbsp;</div></div>
+</section>
+
+<section id="sluzby" class="section services">
+ <div class="wrap">
+  <div class="split-header reveal"><div><span class="kicker">01 / CO DĚLÁME</span><h2>THE CUT.<br><i>THE DETAIL.</i></h2></div><p>Od nenápadného refreshu po úplnou změnu. Styl hledáme podle tebe, ne podle univerzálního návodu.</p></div>
+  <div class="service-grid">
+   <article class="service-tile reveal" data-service="Classic Cut"><div class="service-visual"><img src="assets/images/barber-4625627.webp" alt="Klasický střih v barbershopu" loading="lazy"><span class="service-count">01/04</span></div><div class="service-tile-body"><div><h3>CLASSIC CUT</h3><p>Moderní klasika, čisté linie, finishing.</p></div><a href="#rezervace" class="round-arr" aria-label="Vybrat Classic Cut">↗</a></div></article>
+   <article class="service-tile reveal" data-service="Skin Fade"><div class="service-visual"><img src="assets/images/barber-9992818.webp" alt="Barber při tvorbě moderního střihu" loading="lazy"><span class="service-count">02/04</span></div><div class="service-tile-body"><div><h3>SKIN FADE</h3><p>Ostrý fade, hladký přechod, přesný detail.</p></div><a href="#rezervace" class="round-arr" aria-label="Vybrat Skin Fade">↗</a></div></article>
+   <article class="service-tile reveal" data-service="Beard Sculpt"><div class="service-visual"><img src="assets/images/barber-9992820.webp" alt="Profesionální úprava vlasů a vousů" loading="lazy"><span class="service-count">03/04</span></div><div class="service-tile-body"><div><h3>BEARD SCULPT</h3><p>Vousy do tvaru, který funguje.</p></div><a href="#rezervace" class="round-arr" aria-label="Vybrat Beard Sculpt">↗</a></div></article>
+   <article class="service-tile reveal" data-service="Full Experience"><div class="service-visual"><img src="assets/images/barber-7518731.webp" alt="Kompletní barber péče o střih" loading="lazy"><span class="service-count">04/04</span></div><div class="service-tile-body"><div><h3>FULL EXPERIENCE</h3><p>Střih, vousy, styling. Celý balíček.</p></div><a href="#rezervace" class="round-arr" aria-label="Vybrat Full Experience">↗</a></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="statement-section" aria-label="Naše filozofie">
+ <div class="statement-background"><img src="assets/images/barber-5152514.webp" alt="Atmosféra barbershopu" loading="lazy"></div>
+ <div class="statement-content wrap reveal"><span class="kicker">02 / CUTLINE MINDSET</span><h2>JENOM <span>STŘÍHAT?</span><br>TO JE MÁLO.</h2><p>Dobrý barbershop není jen o výsledku v zrcadle. Je to chvíle pro tebe, preciznost v každém detailu a pocit, se kterým odcházíš.</p><a href="#studio" class="under-link">POZNAT NÁŠ KONCEPT <span>↗</span></a></div>
+ <span class="statement-mark" aria-hidden="true">CL.</span>
+</section>
+
+<section class="section gallery-section" id="galerie">
+ <div class="wrap">
+  <div class="split-header reveal gallery-title"><div><span class="kicker">03 / VIZUÁLNÍ DENÍK</span><h2>LOOK<span class="accent-serif">BOOK.</span></h2></div><p>Inspirace, atmosféra a detaily barber řemesla. Skutečné fotografie z fotobank, použité jako ilustrační ukázky designu.</p></div>
+  <div class="gallery-filter" id="galleryFilters" role="group" aria-label="Filtrovat galerii"><button type="button" data-filter="all" class="active" aria-pressed="true">VŠECHNY <span id="photoCount">26</span></button><button type="button" data-filter="střih" aria-pressed="false">STŘIHY</button><button type="button" data-filter="interier" aria-pressed="false">PROSTOR</button><button type="button" data-filter="detail" aria-pressed="false">DETAILY</button></div>
+  <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+  <p class="gallery-foot">FOTOGRAFIE JSOU ILUSTRAČNÍ. NEJDE O DOKONČENÉ PRÁCE KONKRÉTNÍHO BARBERSHOPU.</p>
+ </div>
+</section>
+
+<section id="cenik" class="section pricing">
+ <div class="wrap pricing-layout">
+  <div class="pricing-intro reveal"><span class="kicker">04 / TRANSPARENTNÍ CENY</span><h2>NO<br>HIDDEN<br><i>EXTRAS.</i></h2><p>Jasná nabídka předem. Vyber si styl, který chceš, a pokračuj k ukázkové rezervaci.</p><span class="pricing-note">CENY A ČASY JSOU ILUSTRAČNÍ — DEMO PROJEKT.</span><img src="assets/images/barber-12505400.webp" alt="Klasické barber křeslo v interiéru" loading="lazy"></div>
+  <div class="price-content reveal">
+   <div class="price-nav" id="priceFilters" role="group" aria-label="Kategorie ceníku"><button class="active" data-group="all" aria-pressed="true">VŠE</button><button data-group="hair" aria-pressed="false">VLASY</button><button data-group="beard" aria-pressed="false">VOUSY</button><button data-group="combo" aria-pressed="false">BALÍČKY</button></div>
+   <div id="priceList"></div>
+   <div class="price-end"><span>NAŠEL JSI SVŮJ STYL?</span><a href="#rezervace">VYBRAT TERMÍN ↗</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="section studio-section" id="studio">
+ <div class="wrap studio-grid">
+  <div class="studio-photo reveal"><img src="assets/images/barber-8218487.webp" alt="Interiér stylového barbershopu" loading="lazy"><div class="studio-photo-badge">SPACE TO <strong>RESET.</strong></div></div>
+  <div class="studio-copy reveal"><span class="kicker">05 / PROSTOR S CHARAKTEREM</span><h2>FRESH<br>SPACE.<br><i>REAL VIBE.</i></h2><p>Atmosféra, kterou poznáš hned po vstupu. Dobrý design, uvolněná energie a prostor, kde můžeš vypnout. CUTLINE je fiktivní značka vytvořená pro ukázku moderního webu.</p><div class="studio-rule"><span>01</span> PROSTOR PRO VLASTNÍ STYL</div><div class="studio-rule"><span>02</span> DETAIL NAD KLIŠÉ</div><div class="studio-rule"><span>03</span> JEDNODUCHÁ DOMLUVA</div><a href="#rezervace" class="btn btn-dark">CHCI NOVÝ LOOK ↗</a></div>
+ </div>
+</section>
+
+<section id="rezervace" class="section booking">
+ <div class="wrap booking-grid">
+  <div class="booking-copy reveal"><span class="kicker">06 / REZERVACE</span><h2>READY<br>FOR A<br><i>FRESH CUT?</i></h2><p>Vyzkoušej, jak by mohlo fungovat objednání. Vyber službu, datum a čas. Na konci dostaneš přehled, který můžeš zkopírovat.</p><div class="booking-assurance"><span>●</span> DEMO REZERVACE — NIC SE AUTOMATICKY NEODESÍLÁ</div><img src="assets/images/barber-7518751.webp" alt="Styling vlasů v barbershopu" loading="lazy"></div>
+  <form id="bookingForm" class="booking-form reveal">
+   <div class="form-head"><span>YOUR APPOINTMENT</span><strong>01 / 03</strong></div>
+   <h3>NAJDI SVŮJ<br>DALŠÍ STŘIH.</h3>
+   <label for="bookingService">01 — VYBER SLUŽBU</label><select id="bookingService" required><option value="">Vyber službu</option></select>
+   <div class="form-two"><div><label for="bookingDate">02 — DATUM</label><input type="date" id="bookingDate" required></div><div><label for="bookingTime">03 — ČAS</label><select id="bookingTime" required><option value="">Vyber čas</option></select></div></div>
+   <div class="form-two"><div><label for="bookingName">JMÉNO</label><input type="text" id="bookingName" required autocomplete="name" placeholder="Tvoje jméno" maxlength="90"></div><div><label for="bookingEmail">E-MAIL</label><input type="email" id="bookingEmail" required autocomplete="email" placeholder="tvoje@email.cz" maxlength="160"></div></div>
+   <label for="bookingNote">POZNÁMKA (NEPOVINNÉ)</label><textarea id="bookingNote" rows="3" placeholder="Co bys chtěl změnit?" maxlength="400"></textarea>
+   <div class="estimate-line"><span>ORIENTAČNÍ CENA</span><strong id="bookingEstimate">— Kč</strong></div>
+   <button class="btn btn-orange booking-submit" type="submit">ZOBRAZIT SHRNUTÍ <span>↗</span></button>
+   <small class="form-disclaimer">Ukázkový formulář bez rezervačního systému. Termín není skutečně rezervován a údaje nejsou odesílány.</small>
+   <div id="bookingResult" role="status" class="booking-result" hidden><strong>UKÁZKOVÁ POPTÁVKA JE PŘIPRAVENÁ.</strong><pre id="bookingSummary"></pre><button type="button" id="copyBooking" class="copy-btn">KOPÍROVAT SHRNUTÍ</button></div>
+  </form>
+ </div>
+</section>
+
+<section id="faq" class="section faq-section">
+ <div class="wrap faq-layout"><div class="reveal"><span class="kicker">07 / GOOD TO KNOW</span><h2>NO BAD<br><i>QUESTIONS.</i></h2></div><div class="faq-list reveal">
+  <details><summary>Jde se objednat přímo přes tento web? <span>+</span></summary><p>Jde o demonstrační web. Formulář vytvoří pouze přehled nezávazné poptávky, nic neodesílá ani nerezervuje.</p></details>
+  <details><summary>Jsou ceny na webu konečné? <span>+</span></summary><p>Ne. Ceník je ilustrační a slouží pro ukázku budoucího řešení. Skutečný provozovatel by doplnil vlastní ceny a podmínky.</p></details>
+  <details><summary>Jsou fotografie ze skutečného studia CUTLINE? <span>+</span></summary><p>Ne. Všechny fotografie pocházejí z fotobanky Pexels a slouží jen jako vizuální ilustrace.</p></details>
+  <details><summary>Je možné web přizpůsobit skutečné firmě? <span>+</span></summary><p>Ano, celý návrh lze upravit podle jména podniku, týmu, jeho služeb, cen a vlastních fotografií.</p></details>
+ </div></div>
+</section>
+
+<section class="final-cta"><div class="wrap reveal"><span>IT'S YOUR MOVE.</span><h2>STAY<br><i>SHARP.</i></h2><a href="#rezervace" class="cta-circle" aria-label="Otevřít rezervaci">↗</a></div></section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-top"><a href="#top" class="foot-brand">CUTLINE<span>.</span></a><p>FIKTIVNÍ BARBER BRAND / DESIGNOVÝ DEMO PROJEKT. VŠECHNY FOTOGRAFIE JSOU ILUSTRAČNÍ.</p></div><div class="foot-bottom"><span>© 2026 CUTLINE. / DEMO</span><span>DESIGNED TO STAND OUT.</span><a href="#top">BACK TO TOP ↑</a></div><div class="credit">Fotografie: <a href="https://www.pexels.com/" target="_blank" rel="noopener">Pexels</a> · Zdroje jednotlivých fotek najdeš v souboru FOTO-ZDROJE.txt.</div></div></footer>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Prohlížeč galerie" hidden><button id="lightboxClose" class="lb-close" aria-label="Zavřít galerii">×</button><button id="lightboxPrev" class="lb-prev" aria-label="Předchozí fotografie">←</button><figure><img id="lightboxImage" src="assets/images/barber-4625627.webp" alt=""><figcaption id="lightboxCaption"></figcaption></figure><button id="lightboxNext" class="lb-next" aria-label="Další fotografie">→</button></div>
+</body>
+</html>

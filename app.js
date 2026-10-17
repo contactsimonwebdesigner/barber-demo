@@ -1,31 +1,31 @@
 "use strict";
-const PHOTOS = [{"path":"assets/images/barber-4625627.webp","title":"barber při stříhání","cat":"střih"},{"path":"assets/images/barber-5584458.webp","title":"detail pánského střihu","cat":"detail"},{"path":"assets/images/barber-9992818.webp","title":"práce barbera v salonu","cat":"střih"},{"path":"assets/images/barber-7518731.webp","title":"střih ve studiu","cat":"střih"},{"path":"assets/images/barber-9992820.webp","title":"úprava vlasů","cat":"střih"},{"path":"assets/images/barber-7518751.webp","title":"styling a střih","cat":"střih"},{"path":"assets/images/barber-4625626.webp","title":"moderní střih","cat":"střih"},{"path":"assets/images/barber-7518735.webp","title":"detail profesionální práce","cat":"detail"},{"path":"assets/images/barber-7697283.webp","title":"precizní střih","cat":"střih"},{"path":"assets/images/barber-2076930.webp","title":"barber a klient","cat":"detail"},{"path":"assets/images/barber-27467943.webp","title":"moderní účes","cat":"střih"},{"path":"assets/images/barber-19028067.webp","title":"styling ve studiu","cat":"střih"},{"path":"assets/images/barber-5152514.webp","title":"interiér barbershopu","cat":"interier"},{"path":"assets/images/barber-8218487.webp","title":"vintage barbershop interiér","cat":"interier"},{"path":"assets/images/barber-19225142.webp","title":"barber studio a křeslo","cat":"interier"},{"path":"assets/images/barber-12685937.webp","title":"retro barber křeslo","cat":"interier"},{"path":"assets/images/barber-3992850.webp","title":"křesla a zrcadla","cat":"interier"},{"path":"assets/images/barber-19225277.webp","title":"moderní barber křeslo","cat":"interier"},{"path":"assets/images/barber-12505400.webp","title":"interiér salonu","cat":"interier"},{"path":"assets/images/barber-12164646.webp","title":"barber stanice se zrcadlem","cat":"interier"},{"path":"assets/images/barber-15642778.webp","title":"vintage interiér","cat":"interier"},{"path":"assets/images/barber-12685938.webp","title":"barber interiér","cat":"interier"},{"path":"assets/images/barber-18090356.webp","title":"barber studio černobílé","cat":"interier"}];
+const PHOTOS = [{"path":"assets/images/barber-4625627.webp","title":"barber giving a haircut","cat":"cut"},{"path":"assets/images/barber-5584458.webp","title":"men's haircut detail","cat":"detail"},{"path":"assets/images/barber-9992818.webp","title":"barber at work in a salon","cat":"cut"},{"path":"assets/images/barber-7518731.webp","title":"studio haircut","cat":"cut"},{"path":"assets/images/barber-9992820.webp","title":"hair grooming","cat":"cut"},{"path":"assets/images/barber-7518751.webp","title":"styling and haircut","cat":"cut"},{"path":"assets/images/barber-4625626.webp","title":"modern haircut","cat":"cut"},{"path":"assets/images/barber-7518735.webp","title":"professional work detail","cat":"detail"},{"path":"assets/images/barber-7697283.webp","title":"precision cut","cat":"cut"},{"path":"assets/images/barber-2076930.webp","title":"barber and client","cat":"detail"},{"path":"assets/images/barber-27467943.webp","title":"modern hairstyle","cat":"cut"},{"path":"assets/images/barber-19028067.webp","title":"styling in the studio","cat":"cut"},{"path":"assets/images/barber-5152514.webp","title":"barbershop interior","cat":"interier"},{"path":"assets/images/barber-8218487.webp","title":"vintage barbershop interior","cat":"interier"},{"path":"assets/images/barber-19225142.webp","title":"barber studio and chair","cat":"interier"},{"path":"assets/images/barber-12685937.webp","title":"retro barber chair","cat":"interier"},{"path":"assets/images/barber-3992850.webp","title":"chairs and mirrors","cat":"interier"},{"path":"assets/images/barber-19225277.webp","title":"modern barber chair","cat":"interier"},{"path":"assets/images/barber-12505400.webp","title":"salon interior","cat":"interier"},{"path":"assets/images/barber-12164646.webp","title":"barber station with mirror","cat":"interier"},{"path":"assets/images/barber-15642778.webp","title":"vintage interior","cat":"interier"},{"path":"assets/images/barber-12685938.webp","title":"barber interior","cat":"interier"},{"path":"assets/images/barber-18090356.webp","title":"black-and-white barber studio","cat":"interier"}];
 const SERVICES = [
-{name:"Classic Cut",kind:"hair",price:590,minutes:45,desc:"Klasický pánský střih · styling"},
-{name:"Skin Fade",kind:"hair",price:690,minutes:50,desc:"Přechod do ztracena · finishing"},
-{name:"Buzz Cut",kind:"hair",price:350,minutes:20,desc:"Krátký střih strojkem"},
-{name:"Scissor Cut",kind:"hair",price:650,minutes:50,desc:"Střih nůžkami · textura"},
-{name:"Long Hair Shape",kind:"hair",price:720,minutes:55,desc:"Delší vlasy · tvar a styling"},
-{name:"Crew Cut",kind:"hair",price:520,minutes:35,desc:"Krátký sportovní střih"},
-{name:"Contour Refresh",kind:"hair",price:290,minutes:20,desc:"Úprava kontur mezi návštěvami"},
-{name:"Restyle",kind:"hair",price:790,minutes:65,desc:"Nový účes · individuální styling"},
-{name:"Beard Sculpt",kind:"beard",price:390,minutes:25,desc:"Úprava vousů a finální tvar"},
-{name:"Beard Refresh",kind:"beard",price:250,minutes:15,desc:"Rychlé srovnání vousů"},
-{name:"Beard & Contour",kind:"beard",price:450,minutes:30,desc:"Vousy a úprava kontur"},
-{name:"Full Experience",kind:"combo",price:980,minutes:75,desc:"Střih · vousy · styling"},
-{name:"Fade & Beard",kind:"combo",price:950,minutes:75,desc:"Skin fade a kompletní vousy"},
-{name:"Cut & Wash",kind:"combo",price:740,minutes:55,desc:"Střih · mytí · styling"},
-{name:"Premium Restyle",kind:"combo",price:1090,minutes:85,desc:"Komplexní změna stylu"},
-{name:"Express Combo",kind:"combo",price:690,minutes:45,desc:"Rychlý střih a lehká úprava vousů"},
-{name:"Father & Son",kind:"combo",price:990,minutes:85,desc:"Dva klasické střihy"},
-{name:"Student Cut",kind:"hair",price:490,minutes:40,desc:"Střih pro studenty"}
+{name:"Classic Cut",kind:"hair",price:590,minutes:45,desc:"Classic men's haircut · styling"},
+{name:"Skin Fade",kind:"hair",price:690,minutes:50,desc:"Seamless fade · finishing"},
+{name:"Buzz Cut",kind:"hair",price:350,minutes:20,desc:"Short clipper cut"},
+{name:"Scissor Cut",kind:"hair",price:650,minutes:50,desc:"Scissor cut · texture"},
+{name:"Long Hair Shape",kind:"hair",price:720,minutes:55,desc:"Longer hair · shape and styling"},
+{name:"Crew Cut",kind:"hair",price:520,minutes:35,desc:"Short sporty haircut"},
+{name:"Contour Refresh",kind:"hair",price:290,minutes:20,desc:"Edge-up between visits"},
+{name:"Restyle",kind:"hair",price:790,minutes:65,desc:"New hairstyle · individual styling"},
+{name:"Beard Sculpt",kind:"beard",price:390,minutes:25,desc:"Beard trimming and final shaping"},
+{name:"Beard Refresh",kind:"beard",price:250,minutes:15,desc:"Quick beard trim"},
+{name:"Beard & Contour",kind:"beard",price:450,minutes:30,desc:"Beard and edge-up"},
+{name:"Full Experience",kind:"combo",price:980,minutes:75,desc:"Haircut · beard · styling"},
+{name:"Fade & Beard",kind:"combo",price:950,minutes:75,desc:"Skin fade and full beard grooming"},
+{name:"Cut & Wash",kind:"combo",price:740,minutes:55,desc:"Haircut · wash · styling"},
+{name:"Premium Restyle",kind:"combo",price:1090,minutes:85,desc:"Complete style makeover"},
+{name:"Express Combo",kind:"combo",price:690,minutes:45,desc:"Quick cut and light beard trim"},
+{name:"Father & Son",kind:"combo",price:990,minutes:85,desc:"Two classic haircuts"},
+{name:"Student Cut",kind:"hair",price:490,minutes:40,desc:"Student haircut"}
 ];
-const money = n => new Intl.NumberFormat("cs-CZ").format(n)+" Kč";
+const money = n => "$"+new Intl.NumberFormat("en-US").format(Math.round(n/31.6));
 const q = s=> document.querySelector(s);
 const qa = s=> Array.from(document.querySelectorAll(s));
 const nav=q("#navLinks"), toggle=q("#menuToggle");
-function closeMenu(){nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Otevřít menu");}
-toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Zavřít menu":"Otevřít menu");});
+function closeMenu(){nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Open menu");}
+toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close menu":"Open menu");});
 nav.addEventListener("click",e=>{if(e.target.closest("a")) closeMenu()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeMenu();closeLightbox()}});
 document.addEventListener("click",e=>{if(!e.target.closest(".nav-shell"))closeMenu()});
@@ -44,7 +44,7 @@ function renderPhotos(category="all"){
  photoFiltered=PHOTOS.filter(p=>category==="all"||p.cat===category);
  grid.replaceChildren();
  photoFiltered.forEach((p,i)=>{
- const b=document.createElement("button");b.type="button";b.className="gallery-card";b.setAttribute("aria-label","Otevřít fotografii "+p.title);
+ const b=document.createElement("button");b.type="button";b.className="gallery-card";b.setAttribute("aria-label","Open photo "+p.title);
  const img=document.createElement("img");img.src=p.path;img.alt=p.title;img.loading=i<4?"eager":"lazy";img.decoding="async";
  const cap=document.createElement("div");cap.className="gallery-label";
  const info=document.createElement("div");
@@ -60,7 +60,7 @@ filters.addEventListener("click",e=>{let b=e.target.closest("button[data-filter]
 const lb=q("#lightbox"),lbImage=q("#lightboxImage"),lbCaption=q("#lightboxCaption");
 let previousFocus=null;
 function openLightbox(i){if(!photoFiltered.length)return;previousFocus=document.activeElement;photoIndex=(i+photoFiltered.length)%photoFiltered.length;paintLightbox();lb.hidden=false;document.body.style.overflow="hidden";q("#lightboxClose").focus()}
-function paintLightbox(){const p=photoFiltered[photoIndex];lbImage.src=p.path;lbImage.alt=p.title;lbCaption.textContent=(photoIndex+1)+" / "+photoFiltered.length+" — "+p.title+" · ilustrační fotografie Pexels"}
+function paintLightbox(){const p=photoFiltered[photoIndex];lbImage.src=p.path;lbImage.alt=p.title;lbCaption.textContent=(photoIndex+1)+" / "+photoFiltered.length+" — "+p.title+" · illustrative Pexels photo"}
 function stepLightbox(n){photoIndex=(photoIndex+n+photoFiltered.length)%photoFiltered.length;paintLightbox()}
 function closeLightbox(){if(lb.hidden)return;lb.hidden=true;document.body.style.overflow="";lbImage.src=PHOTOS[0].path;if(previousFocus?.focus)previousFocus.focus()}
 q("#lightboxClose").addEventListener("click",closeLightbox);
@@ -79,7 +79,7 @@ function renderPrices(kind="all"){
  const desc=document.createElement("small");desc.textContent=s.desc+" · "+s.minutes+" min";left.append(name,desc);
  const right=document.createElement("div");right.className="price-row-right";
  const amount=document.createElement("b");amount.textContent=money(s.price);
- const add=document.createElement("button");add.type="button";add.className="price-add";add.textContent="↗";add.setAttribute("aria-label","Vybrat službu "+s.name);add.addEventListener("click",()=>selectService(s.name,true));right.append(amount,add);row.append(left,right);priceList.append(row);
+ const add=document.createElement("button");add.type="button";add.className="price-add";add.textContent="↗";add.setAttribute("aria-label","Select service "+s.name);add.addEventListener("click",()=>selectService(s.name,true));right.append(amount,add);row.append(left,right);priceList.append(row);
  });
 }
 priceFilters.addEventListener("click",e=>{const b=e.target.closest("button[data-group]");if(!b)return;qa("#priceFilters button").forEach(x=>{x.classList.toggle("active",x===b);x.setAttribute("aria-pressed",String(x===b))});renderPrices(b.dataset.group)});
@@ -87,7 +87,7 @@ SERVICES.forEach(s=>{const opt=document.createElement("option");opt.value=s.name
 function selectService(name,scroll){serviceSelect.value=name;updateEstimate();if(scroll)q("#rezervace").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}
 qa(".service-tile").forEach(el=>el.addEventListener("click",e=>{if(e.target.closest("a"))selectService(el.dataset.service,false)}));
 serviceSelect.addEventListener("change",updateEstimate);
-function updateEstimate(){const selected=SERVICES.find(s=>s.name===serviceSelect.value);estimate.textContent=selected?money(selected.price):"— Kč"}
+function updateEstimate(){const selected=SERVICES.find(s=>s.name===serviceSelect.value);estimate.textContent=selected?money(selected.price):"—"}
 renderPrices();
 
 const dateField=q("#bookingDate");const today=new Date(), pad=n=>String(n).padStart(2,"0");
@@ -99,17 +99,17 @@ q("#bookingForm").addEventListener("submit",e=>{
  e.preventDefault();if(!e.currentTarget.reportValidity())return;
  const srv=SERVICES.find(s=>s.name===serviceSelect.value);
  lastSummary=[
- "CUTLINE. — DEMO POPTÁVKA / NEPOTVRZENÁ REZERVACE",
- "Služba: "+srv.name,
- "Orientační cena: "+money(srv.price),
- "Orientační délka: "+srv.minutes+" min",
- "Požadované datum: "+dateField.value,
- "Požadovaný čas: "+timeSelect.value,
- "Jméno: "+q("#bookingName").value.trim(),
- "E-mail: "+q("#bookingEmail").value.trim(),
- "Poznámka: "+(q("#bookingNote").value.trim()||"Bez poznámky"),
+ "CUTLINE. — DEMO INQUIRY / UNCONFIRMED APPOINTMENT",
+ "Service: "+srv.name,
+ "Estimated price: "+money(srv.price),
+ "Estimated duration: "+srv.minutes+" min",
+ "Requested date: "+dateField.value,
+ "Requested time: "+timeSelect.value,
+ "Name: "+q("#bookingName").value.trim(),
+ "Email: "+q("#bookingEmail").value.trim(),
+ "Note: "+(q("#bookingNote").value.trim()||"No note"),
  "",
- "Jde pouze o ukázkový výstup. Nikomu nic nebylo odesláno a termín není rezervován."
+ "This is only a sample summary. Nothing has been sent and no appointment has been reserved."
  ].join("\n");
  q("#bookingSummary").textContent=lastSummary;q("#bookingResult").hidden=false;q("#bookingResult").scrollIntoView({behavior:"smooth",block:"nearest"});
 });
@@ -118,6 +118,6 @@ q("#copyBooking").addEventListener("click",async()=>{
  let ok=false;
  try{await navigator.clipboard.writeText(lastSummary);ok=true}catch{}
  if(!ok){const tmp=document.createElement("textarea");tmp.value=lastSummary;document.body.append(tmp);tmp.select();try{ok=document.execCommand("copy")}catch{}tmp.remove()}
- const b=q("#copyBooking");b.textContent=ok?"ZKOPÍROVÁNO ✓":"KOPÍROVÁNÍ NENÍ K DISPOZICI";
- setTimeout(()=>b.textContent="KOPÍROVAT SHRNUTÍ",2800);
+ const b=q("#copyBooking");b.textContent=ok?"COPIED ✓":"COPYING UNAVAILABLE";
+ setTimeout(()=>b.textContent="COPY SUMMARY",2800);
 });
